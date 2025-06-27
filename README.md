@@ -46,7 +46,7 @@ The input data (a CSV file) contains multiple flattened fields related to real e
 
 ---
 
-## 📦 Project Structure
+##📦 Project Structure
 ├── data/
 │ ├── fake_data.csv # Raw input dataset
 │ └── Field Config.xlsx # Field-to-table mapping
@@ -106,7 +106,9 @@ Each table is linked to `property.id` via foreign keys to maintain referential i
 7. Commit and close connection
 ```
 
-🚀 How to Run the Project
+#🚀 How to Run the Project
+
+
 Step 1: Clone the Repository
 bash
 Copy
@@ -132,7 +134,10 @@ database: home_db
 Step 3: Install Python Requirements
 
 pip install -r requirements.txt
-🧪 Run ETL
+
+
+
+#🧪 Run ETL
 Option A: Fresh Load (Truncate All)
 bash
 Copy
@@ -153,12 +158,12 @@ Inserts only new property rows (based on property_title)
 
 Preserves existing data
 
-📊 Validate Results in MySQL
+#📊 Validate Results in MySQL
 bash
 Copy
 Edit
 docker exec -it mysql_ctn mysql -u root -p
-# Enter password: 6equj5_root
+Enter password: 6equj5_root
 
 USE home_db;
 
@@ -189,7 +194,7 @@ Expected output (after full run):
 
 
 
-✅ Features Implemented
+#✅ Features Implemented
 ✔ Clean and reproducible ETL process
 
 ✔ Schema-first, normalized DB design
@@ -211,7 +216,7 @@ Data & AI Engineer | Python & MLOps Enthusiast
 This project is proprietary and confidential.
 All rights reserved by HomeLLC for assessment and evaluation purposes.
 
-📬 Submission Checklist
+#📬 Submission Checklist
 ✅ Edited this README.md with all required instructions
 ✅ Organized code into scripts/, sql/, data/ folders
 ✅ ETL script works end-to-end via command line
