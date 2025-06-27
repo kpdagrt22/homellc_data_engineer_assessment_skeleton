@@ -106,6 +106,8 @@ Each table is linked to `property.id` via foreign keys to maintain referential i
 7. Commit and close connection
 ```
 
+
+---
 ### 🚀 How to Run the Project
 
 
@@ -119,10 +121,12 @@ cd homellc_data_engineer_assessment_skeleton
 
 
 Step 2: Start MySQL with Docker
-bash
-Copy
-Edit
+
+
+
 docker-compose -f docker-compose.initial.yml up --build -d
+
+
 MySQL starts at localhost:3306
 
 Credentials are:
@@ -141,9 +145,8 @@ pip install -r requirements.txt
 
 
 Option A: Fresh Load (Truncate All)
-bash
-Copy
-Edit
+
+ 
 python scripts/run_etl.py --truncate
 Disables FK checks
 
@@ -152,9 +155,9 @@ Truncates all normalized tables
 Reloads full dataset
 
 Option B: Deduplicated Load (Default)
-bash
-Copy
-Edit
+
+
+
 python scripts/run_etl.py
 Inserts only new property rows (based on property_title)
 
@@ -167,6 +170,8 @@ Preserves existing data
 docker exec -it mysql_ctn mysql -u root -p
 Enter password: 6equj5_root
 
+
+```
 USE home_db;
 
 SELECT 'property', COUNT(*) FROM property
@@ -181,8 +186,8 @@ SELECT 'rehab', COUNT(*) FROM rehab
 UNION
 SELECT 'taxes', COUNT(*) FROM taxes;
 Expected output (after full run):
-
-
+```
+```
 +------------+----------+
 | table_name | COUNT(*) |
 +------------+----------+
@@ -194,9 +199,10 @@ Expected output (after full run):
 | taxes      |    10000 |
 +------------+----------+
 
-
-
+```
+---
 ### ✅ Features Implemented
+```
 ✔ Clean and reproducible ETL process
 
 ✔ Schema-first, normalized DB design
@@ -208,7 +214,7 @@ Expected output (after full run):
 ✔ Error-handling and safe inserts
 
 ✔ Documentation with complete setup instructions
-
+```
 👨‍💻 Author
 Prakash Kantumutchu
 Data & AI Engineer | Python & MLOps Enthusiast
@@ -219,11 +225,12 @@ This project is proprietary and confidential.
 All rights reserved by HomeLLC for assessment and evaluation purposes.
 
 #📬 Submission Checklist
+```
 ✅ Edited this README.md with all required instructions
 ✅ Organized code into scripts/, sql/, data/ folders
 ✅ ETL script works end-to-end via command line
 ✅ All steps are reproducible by the reviewer
 ✅ Schema and logic clearly documented
 ✅ Project pushed to GitHub for submission
-
+```
 Thank you! Looking forward to your feedback.
