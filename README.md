@@ -46,7 +46,7 @@ The input data (a CSV file) contains multiple flattened fields related to real e
 
 ---
 ```
-##📦 Project Structure
+📦 Project Structure
 ├── data/
 │ ├── fake_data.csv # Raw input dataset
 │ └── Field Config.xlsx # Field-to-table mapping
