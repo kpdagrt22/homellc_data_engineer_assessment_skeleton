@@ -192,7 +192,8 @@ bash
 Copy
 Edit
 docker exec -it mysql_ctn mysql -u root -p
-# Enter password: 6equj5_root
+Enter password: 6equj5_root
+
 Then run:
 
 sql
