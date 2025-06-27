@@ -104,6 +104,7 @@ Each table is linked to `property.id` via foreign keys to maintain referential i
    b. Add FK (property_id)
    c. Insert row-by-row
 7. Commit and close connection
+```
 
 🚀 How to Run the Project
 Step 1: Clone the Repository
@@ -112,6 +113,9 @@ Copy
 Edit
 git clone https://github.com/kpdagrt22/homellc_data_engineer_assessment_skeleton.git
 cd homellc_data_engineer_assessment_skeleton
+
+
+
 Step 2: Start MySQL with Docker
 bash
 Copy
@@ -120,17 +124,13 @@ docker-compose -f docker-compose.initial.yml up --build -d
 MySQL starts at localhost:3306
 
 Credentials are:
-
-makefile
-Copy
-Edit
 user:     db_user
 password: 6equj5_db_user
 database: home_db
+
+
 Step 3: Install Python Requirements
-bash
-Copy
-Edit
+
 pip install -r requirements.txt
 🧪 Run ETL
 Option A: Fresh Load (Truncate All)
@@ -175,9 +175,7 @@ UNION
 SELECT 'taxes', COUNT(*) FROM taxes;
 Expected output (after full run):
 
-pgsql
-Copy
-Edit
+
 +------------+----------+
 | table_name | COUNT(*) |
 +------------+----------+
@@ -188,6 +186,9 @@ Edit
 | rehab      |    10000 |
 | taxes      |    10000 |
 +------------+----------+
+
+
+
 ✅ Features Implemented
 ✔ Clean and reproducible ETL process
 
@@ -204,8 +205,7 @@ Edit
 👨‍💻 Author
 Prakash Kantumutchu
 Data & AI Engineer | Python & MLOps Enthusiast
-🔗 LinkedIn
-🔗 GitHub
+
 
 📄 License
 This project is proprietary and confidential.
