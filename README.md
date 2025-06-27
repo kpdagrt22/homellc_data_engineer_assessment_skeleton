@@ -106,7 +106,7 @@ Each table is linked to `property.id` via foreign keys to maintain referential i
 7. Commit and close connection
 ```
 
-#🚀 How to Run the Project
+### 🚀 How to Run the Project
 
 
 Step 1: Clone the Repository
@@ -137,7 +137,9 @@ pip install -r requirements.txt
 
 
 
-#🧪 Run ETL
+### 🧪 Run ETL
+
+
 Option A: Fresh Load (Truncate All)
 bash
 Copy
@@ -158,10 +160,10 @@ Inserts only new property rows (based on property_title)
 
 Preserves existing data
 
-#📊 Validate Results in MySQL
-bash
-Copy
-Edit
+###  📊 Validate Results in MySQL
+
+
+
 docker exec -it mysql_ctn mysql -u root -p
 Enter password: 6equj5_root
 
@@ -194,7 +196,7 @@ Expected output (after full run):
 
 
 
-#✅ Features Implemented
+### ✅ Features Implemented
 ✔ Clean and reproducible ETL process
 
 ✔ Schema-first, normalized DB design
