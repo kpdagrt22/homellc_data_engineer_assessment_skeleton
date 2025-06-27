@@ -45,7 +45,7 @@ The input data (a CSV file) contains multiple flattened fields related to real e
 4. Package your work for reproducible execution
 
 ---
-
+```
 ##📦 Project Structure
 ├── data/
 │ ├── fake_data.csv # Raw input dataset
@@ -58,7 +58,7 @@ The input data (a CSV file) contains multiple flattened fields related to real e
 ├── docker-compose.initial.yml # Compose config to start DB
 ├── requirements.txt # Python dependencies
 └── README.md # You are here
-
+```
 ---
 
 ## 🧠 Database Design
