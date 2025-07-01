@@ -110,11 +110,9 @@ Each table is linked to `property.id` via foreign keys to maintain referential i
 ---
 ### 🚀 How to Run the Project
 
-
+```
 Step 1: Clone the Repository
-bash
-Copy
-Edit
+
 git clone https://github.com/kpdagrt22/homellc_data_engineer_assessment_skeleton.git
 cd homellc_data_engineer_assessment_skeleton
 
@@ -139,15 +137,16 @@ Step 3: Install Python Requirements
 
 pip install -r requirements.txt
 
-
+```
 
 ### 🧪 Run ETL
 
 
 Option A: Fresh Load (Truncate All)
 
- 
+```
 python scripts/run_etl.py --truncate
+```
 Disables FK checks
 
 Truncates all normalized tables
@@ -157,8 +156,9 @@ Reloads full dataset
 Option B: Deduplicated Load (Default)
 
 
-
+```
 python scripts/run_etl.py
+```
 Inserts only new property rows (based on property_title)
 
 Preserves existing data
@@ -166,14 +166,13 @@ Preserves existing data
 ###  📊 Validate Results in MySQL
 
 
-
+```
 docker exec -it mysql_ctn mysql -u root -p
 Enter password: 6equj5_root
 
 
 ```
 USE home_db;
-
 SELECT 'property', COUNT(*) FROM property
 UNION
 SELECT 'leads', COUNT(*) FROM leads
