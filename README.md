@@ -110,31 +110,31 @@ Each table is linked to `property.id` via foreign keys to maintain referential i
 ---
 ### 🚀 How to Run the Project
 
-```
-Step 1: Clone the Repository
 
+Step 1: Clone the Repository
+```
 git clone https://github.com/kpdagrt22/homellc_data_engineer_assessment_skeleton.git
 cd homellc_data_engineer_assessment_skeleton
-
+```
 
 
 Step 2: Start MySQL with Docker
 
 
-
+```
 docker-compose -f docker-compose.initial.yml up --build -d
-
+```
 
 MySQL starts at localhost:3306
-
+```
 Credentials are:
 user:     db_user
 password: 6equj5_db_user
 database: home_db
-
+```
 
 Step 3: Install Python Requirements
-
+```
 pip install -r requirements.txt
 
 ```
@@ -169,7 +169,7 @@ Preserves existing data
 ```
 docker exec -it mysql_ctn mysql -u root -p
 Enter password: 6equj5_root
-
+```
 
 ```
 USE home_db;
