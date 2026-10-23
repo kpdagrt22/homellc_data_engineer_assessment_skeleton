@@ -1,5 +1,7 @@
 # 🏗️ HomeLLC Data Engineering Assessment
 
+> **Learning / take-home assessment project:** Take-home data engineering assessment solution completed by [Prakash Kantumutchu (KP)](https://thisiskp.in) in July 2025, demonstrating relational schema normalization in MySQL and a config-driven Python ETL pipeline running in Docker.
+
 Welcome! This project demonstrates end-to-end data engineering skills, including:
 
 - ✅ **SQL databases**: Data modeling, normalization, and scripting
@@ -215,13 +217,10 @@ Expected output (after full run):
 ✔ Documentation with complete setup instructions
 ```
 👨‍💻 Author
-Prakash Kantumutchu
-Data & AI Engineer | Python & MLOps Enthusiast
-
+Prakash Kantumutchu (KP) — [thisiskp.in](https://thisiskp.in)
 
 📄 License
-This project is proprietary and confidential.
-All rights reserved by HomeLLC for assessment and evaluation purposes.
+MIT — see [`LICENSE`](LICENSE). (Assessment problem statement and synthetic sample dataset provided by HomeLLC for evaluation.)
 
 #📬 Submission Checklist
 ```
